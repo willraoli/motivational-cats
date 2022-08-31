@@ -2,11 +2,19 @@
 import Layout from '../layouts/Layout.astro'
 import Cat from '../components/Cat.astro'
 import Quote from '../components/Quote.astro'
+import { getQuote } from '../api/getQuote'
+import { getCat } from '../api/getCat'
+
+const [quote, author] = await getQuote()
+const cat = await getCat()
 ---
 
 <Layout title='Motivational Cats'>
   <main class='flex flex-col gap-8 h-screen items-center justify-center'>
-    <Cat />
-    <Quote />
+    <Cat cat={cat} />
+    <Quote
+      quote={quote}
+      author={author}
+    />
   </main>
 </Layout>
