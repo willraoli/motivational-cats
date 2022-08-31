@@ -1,7 +1,7 @@
 # Motivational Cats
 Built with Astro.
 
-Cat pics: https://thecatapi.com/
+Cat pics: https://thecatapi.com/  
 Quotes: https://zenquotes.io/
 
 ## 🧞 Commands
