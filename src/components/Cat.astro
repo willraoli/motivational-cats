@@ -9,7 +9,7 @@ const cat = await res.json().catch(err => console.log(err))
 ---
 
 <img
-  src={cat[0].url}
+  src={cat[0]?.url}
   class='rounded-full sepia shadow-md'
   width='350'
 />
