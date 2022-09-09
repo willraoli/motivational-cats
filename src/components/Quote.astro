@@ -7,8 +7,8 @@ export interface Props {
 const { quote, author } = Astro.props as Props
 ---
 
-<div class='w-1/4 space-y-8'>
-  <blockquote class='text-orange-300 text-5xl font-crimsonText'>
+<div class='sm:w-2/4 space-y-8 px-4'>
+  <blockquote class='text-orange-300 text-2xl sm:text-4xl font-crimsonText'>
     &ldquo;{quote}&rdquo;
   </blockquote>
   <footer class='text-orange-200 font-serif'>&mdash; {author}</footer>
